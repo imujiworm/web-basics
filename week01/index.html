@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<!-- 언어설정 -->
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 웹 브라우저 스타일 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <title>나의 첫번째 웹페이지</title>
+    <title>나의 첫번쨰 웹페이지</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <p onclick="pop_alert()">Hello, World!</p>
-    <script>
-        const pop_alert = () => {
-            alert('만나서 반가워요')
-        }
-    </script>
+    <section class="poem">
+        <section class="head" onclick="alertPoet()">
+            <p id="title">새로운 길</p>
+        </section>
+        <section class="text">
+            <section class="caluse">
+                <p>내를 건너서 숲으로</p>
+                <p></p>고개를 넘어서 마을로
+            </section>
+            <section class="caluse">
+                <p>어제도 가고 오늘도 갈</p>
+                <p>나의 길 새로운 길</p>
+            </section>
+            <section class="caluse">
+                <p>민들레가 피고 까치가 날고</p>
+                <p>아가씨가 지나고 바람이 일고</p>
+            </section>
+            <section class="caluse">
+                <p>나의 길은 언제나 새로운 길</p>
+                <p>오늘도...내일도...</p>
+            </section>
+            <section class="caluse">
+                <p>내를 건너서 숲으로</p>
+                <p>고개를 넘어서 마을로</p>
+            </section>
+        </section>
+    </section>
+    <script src="./js/index.js"></script>
 </body>
-
-<script src="./js/index.js"></script>  
 </html>
