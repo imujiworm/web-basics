@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 문자 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지 제목 설정 -->
+    <title>Youtube</title>
+    <!-- 파비콘 설정 -->
+    <link rel="shortcut icon" href="myIcon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1cd5d33a00.js" crossorigin="anonymous"></script>
+    <!-- 웹 폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- ㅡmain.css 연결 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js 연결 -->
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header> 
+        <!-- 햄버거 바 아이콘 -->
+        <div id="btn--open" class="material-icons">
+            menu
+        </div>
+        <!-- 닫는 아이콘 -->
+        <div id="btn--close" class="material-icons">
+            menu
+        </div>
+        <!-- 로고 아이콘 -->
+        <div class="main">
+            <a href="/" class="logo">
+              <img src="./images/icon.jpg" height="30" alt="로고" />
+            </a>
+        </div>
+        <!-- 검색창 -->
+        <ul class="search">
+            <input id="search_box" placeholder="검색"/>
+            <li><i class="fas fa-keyboard"></i></li>
+            <li><button>
+                <span class="material-icons">
+                    search
+                </span>
+            </button></li>
+            <li><i class="fas fa-microphone"></i></li>
+        </ul>
+        <!-- SECONDARY HEADER -->
+        <ul class="navbar__icons">
+                <li><i class="material-icons">
+                    video_call 
+                </i></li>
+                <li><i class="material-icons">
+                    apps
+                </i></li>
+                <li><i class="material-icons">
+                    notifications
+                </i></li>
+                <li><i class="material-icons">
+                    account_circle
+                </i></li>
+        </ul>
+    </header>
+    <!-- SIDE MENU -->
+    <nav id="nav_menu">
+        <ul class="nav_icons">
+            <li><i class="fas fa-home"></i></li>
+            <li><p style="font-size: 13px">홈</p></li>
+            <li><i class="fas fa-compass"></i></li>
+            <li><p style="font-size: 13px">탐색</p></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><p style="font-size: 13px">구독</p></li>
+            <li><i class="fas fa-photo-video"></i></li>
+            <li><p style="font-size: 13px">보관함</p></li>
+        </ul>
+    </nav>
+    <!-- BODY -->
+<div>
+    <div class="videos">
+        <div class="video-section">
+                <li><img class="thumbnail-image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMDZfMjUy%2FMDAxNjEyNTQ5ODUzNDAw.E6iVVZsA1KOKC5VZenhZtR6HdGsjDS6thsAjuNLO2XIg.xyhtTIgShFFu_JU5s0kE3rstEdY4C716pPvwEuBc2csg.JPEG.toosj895%2F%25B1%25CD%25B8%25EA%25C0%25C7_%25C4%25AE%25B3%25AF_%25B9%25AB%25C7%25D1%25BF%25AD%25C2%25F7%25C6%25ED.jpg&type=a340"/></li>
+            <div class="video-owner">
+                <li><img  class="owner-image" src="/images/profileImage.png" alt=""></li>
+            </div>
+                   <div class="text">
+                     <li><p style="font-size: 13px">[영화리뷰]귀멸의칼날</p></li>
+                     <li><p style="font-size: 10px">영화리뷰채널</p></li>
+                     조회수:10회 # 6분전
+                   </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="video-section">
+                <li><img class="thumbnail-image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMDZfMjUy%2FMDAxNjEyNTQ5ODUzNDAw.E6iVVZsA1KOKC5VZenhZtR6HdGsjDS6thsAjuNLO2XIg.xyhtTIgShFFu_JU5s0kE3rstEdY4C716pPvwEuBc2csg.JPEG.toosj895%2F%25B1%25CD%25B8%25EA%25C0%25C7_%25C4%25AE%25B3%25AF_%25B9%25AB%25C7%25D1%25BF%25AD%25C2%25F7%25C6%25ED.jpg&type=a340"/></li>
+            <div class="video-owner">
+                <li><img  class="owner-image" src="/images/profileImage.png" alt=""></li>
+            </div>
+                   <div class="text">
+                     <li><p style="font-size: 13px">[영화리뷰]귀멸의칼날</p></li>
+                     <li><p style="font-size: 10px">영화리뷰채널</p></li>
+                     조회수:10회 # 6분전
+                   </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div class="video-section">
+                <li><img class="thumbnail-image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMDZfMjUy%2FMDAxNjEyNTQ5ODUzNDAw.E6iVVZsA1KOKC5VZenhZtR6HdGsjDS6thsAjuNLO2XIg.xyhtTIgShFFu_JU5s0kE3rstEdY4C716pPvwEuBc2csg.JPEG.toosj895%2F%25B1%25CD%25B8%25EA%25C0%25C7_%25C4%25AE%25B3%25AF_%25B9%25AB%25C7%25D1%25BF%25AD%25C2%25F7%25C6%25ED.jpg&type=a340"/></li>
+            <div class="video-owner">
+                <li><img  class="owner-image" src="/images/profileImage.png" alt=""></li>
+            </div>
+                   <div class="text">
+                     <li><p style="font-size: 13px">[영화리뷰]귀멸의칼날</p></li>
+                     <li><p style="font-size: 10px">영화리뷰채널</p></li>
+                     조회수:10회 # 6분전
+                   </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+
