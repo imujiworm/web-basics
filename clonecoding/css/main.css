@@ -1,0 +1,231 @@
+body {
+    overflow-x: scroll;
+    overflow-y:scroll;
+    display: flex;
+    height: 150vh;
+    background: #F9F9F9;
+    flex: 1;
+}
+
+
+.material-icons {
+    color: #616161;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+container {
+    justify-content: space-around;
+}
+/* HEADER */
+
+header {
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; /*제일 앞으로 가지고 와줌*/
+}
+
+/* HEADER ICON */
+header>.material-icons {
+    position: absolute;
+
+}
+ 
+header .icons .material-icons {
+    margin-right: var(--padding);
+}
+
+header .material-icons#btn--open {
+    display: block;
+}
+
+header .material-icons#btn--close{
+    display: none;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    margin: auto 0;
+}
+
+header .logo img {
+    width: 130px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    position: absolute;
+    padding: 8px 12px;
+}
+
+
+.search {
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    height: 50px;
+    left: 50px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #bbb;
+    margin: 10px 0;
+    padding: 10px 12px;
+    font-family: material-icons;
+}
+
+.fa-keyboard {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    cursor: pointer;
+}
+
+button {
+    display: flex;
+    padding: 10px 12px;
+    margin: 10px 0;
+    align-items: center;
+    
+}
+
+button li{
+    list-style: none;
+    height: 9px;
+    display: flex;
+}
+
+.fa-microphone{
+    padding: 8px 10px;
+    font-size: 25px;
+    color: #616161;
+    cursor: pointer;
+}
+.search li{
+    display: flex;
+}
+
+/* NAV BAR*/
+
+nav {
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    width: 70px;
+    background:#FFFFFF;
+    flex: 0.2;
+}
+.navbar {
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    width: 70px;
+    background:#ffffff;
+    flex: 30%;
+}
+
+
+
+.navbar__icons {  
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar__icons li {
+    padding: 8px 10px;
+    right: 500px;
+}
+.navbar_menu li{
+    list-style: none;
+    top: 20px;
+}
+
+.nav_icons li{
+   padding: 8px 12px;
+   text-align: center;
+   font-size: 20px;
+   color: #616161;
+   cursor: pointer;
+  
+}
+
+.fa-home{
+    left: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 959px) {
+    .grid__container {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .box {
+        padding: 1rem;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* VIDEO SECTION */
+div{
+    display: inline-block;
+}
+
+
+
+.video {
+    background: #F9F9F9;
+    top: 60px;
+    height: 150vh;
+    left: 70px;
+    flex: 50%;
+    /* border: 70px solid rgb(255, 255, 255); */
+    justify-content: space-between;
+    /* display: flex; */
+    position: absolute;
+}
+
+.thumbnail {
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.thumbnail-image {
+    width: 400px;
+    height: 250px;
+}
+.video-owner {
+    list-style: none;
+    display: flex;
+}
+
+.owner-image {
+    border-radius: 50%;
+    width: 36px;
+    height:36px;
+    text-decoration: none;
+    
+}
+
+.detail{
+    list-style: none;
+    left: 50px;
+    top: -30px;
+    position: relative;
+}
